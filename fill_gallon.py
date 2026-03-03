@@ -28,6 +28,6 @@ def fill_gallon(gallon: str, bottles: str) -> list | None:
             used_bottles
         ) = min(results)  # Seleciona a combinação com menor sobra ou menor quantidade de garrafas
 
-        return list(used_bottles), rest
+        return list(used_bottles), round(rest, 2)
 
     return None
